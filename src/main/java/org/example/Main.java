@@ -9,8 +9,9 @@ public class Main {
     public static String createDailyPlan(String[] plans) {
         StringBuilder builder = new StringBuilder();
         for (int i = 0; i < plans.length; i++) {
-            builder.append(i + 1).append(".").append(")").append(plans[i]);
+            builder.append(i + 1).append(".").append(")").append(" ").append(plans[i]).append(";").append("\n");
         }
-        return String.valueOf(builder);
+        String name = String.valueOf(builder);
+        return "My plans:" + "\n"  + name;
     }
 }
